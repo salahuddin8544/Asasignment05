@@ -42,7 +42,7 @@
                       <h5 id="player-1-name" class="card-title text-black">Di maria</h5>
                       <p class="card-text text-muted">Forward.</p>
                     </div>
-                    <button id="player-1" class="card-footer bg-primary">
+                    <button id="player-1" class="card-footer bg-primary select-btn">
                      select
                     </button>
                   </div>
@@ -54,7 +54,7 @@
                       <h5 id="player-2-name" class="card-title text-black">Jamal Bhuyan </h5>
                       <p class="card-text text-muted">Midfielder</p>
                     </div>
-                    <button id="player-2" class="card-footer bg-primary">
+                    <button id="player-2" class="card-footer bg-primary select-btn">
                      select
                     </button>
                   </div>
@@ -66,7 +66,7 @@
                       <h5 id="player-3-name" class="card-title text-black">Marcos Acuna</h5>
                       <p class="card-text text-muted">Definder</p>
                     </div>
-                    <button id="player-3" class="card-footer bg-primary">
+                    <button id="player-3" class="card-footer bg-primary select-btn">
                      select
                     </button>
                   </div>
@@ -80,7 +80,7 @@
                       <h5 id="player-4-name" class="card-title text-black">Neymar</h5>
                       <p class="card-text text-muted">Midfielder</p>
                     </div>
-                    <button id="player-4" class="card-footer bg-primary">
+                    <button id="player-4" class="card-footer bg-primary select-btn">
                      select
                     </button>
                   </div>
@@ -92,7 +92,7 @@
                       <h5 id="player-5-name" class="card-title text-black">Alision</h5>
                       <p class="card-text text-muted">goalkipper</p>
                     </div>
-                    <button id="player-5" class="card-footer bg-primary">
+                    <button id="player-5" class="card-footer bg-primary select-btn">
                      select
                     </button>
                   </div>
@@ -104,7 +104,7 @@
                       <h5 id="player-6-name" class="card-title text-black">Ronaldo_midfielde</h5>
                       <p class="card-text text-muted">Midfielder</p>
                     </div>
-                    <button id="player-6" class="card-footer bg-primary">
+                    <button id="player-6" class="card-footer bg-primary select-btn">
                      select
                     </button>
                   </div>
@@ -115,26 +115,21 @@
               <aside class="text-center">
                <div>
                 <h3>Selected-V</h3>
-                <ol id="count-player">
-                  <li>we</li>
-                  <li>me</li>
-                  <li>te</li>
-                  <li>se</li>
-                  <li></li>
+                <ol id="count-player">                 
                 </ol>
               </div>
               <div>
                 <h3>Budget</h3>
-                <p> Per Player: <input class="input rounded-start" type="text"></p>
-                <button class="btn-aside bg-primary text-white rounded">Calculate</button>
+                <p> Per Player: <input id="budget" class="input rounded-start" type="text"></p>
+                <button id="budget-calculate" class="btn-aside bg-primary text-white rounded">Calculate</button>
               </div>
               <div>
-              <h3>Player Expenses: $<span>0</span></h3>
-              <p> Manager : <input class="input rounded-start" type="text"></p>
-              <p> Coach: <input class="input rounded-start" type="text"></p>
-              <button class="btn-aside bg-primary text-white rounded">Calculate</button>
+              <h3>Player Expenses: $<span id="player-expenses">0</span></h3>
+              <p> Manager : <input id="manager" class="input rounded-start" type="text"></p>
+              <p> Coach: <input id="coach" class="input rounded-start" type="text"></p>
+              <button id="total-calculate" class="btn-aside bg-primary text-white rounded">Calculate</button>
               </div>
-              <h3>Total: $ <Span>0</Span></h3>
+              <h3>Total: $ <Span id="total">0</Span></h3>
               </aside>
             </div>
         </div>

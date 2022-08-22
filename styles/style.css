@@ -22,3 +22,10 @@ p{
     width: 221px;
     height: 42px;
 }
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #5093f8;
+  color: #cdbfbf;
+}
+

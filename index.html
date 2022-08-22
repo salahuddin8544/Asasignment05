@@ -1,23 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- css link  -->
     <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    <h1>Testing</h1>
-    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
 
+<body>
+    <!-- header -->
+    <header class="container">
+        <div class="row p-4">
+            <div class="col-md-4">
+                <img src="images/messin.png" alt="">
+            </div>
+            <div class="col-md-8 header-title">
+                <h1 class="">Make a good Team</h1>
+                <p class="text-white mt-5">Playing at the FIFA World Cup, the biggest international football tournament, is
+                    considered to be the pinnacle of a footballer’s career. Individual players are usually the first to
+                    be mentioned by pundits</p>
+            </div>
+        </div>
+    </header>
+    <!-- main section  -->
+    <main>
+     <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/Di_maria_midfield.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="player-1-name" class="card-title text-black">Di maria</h5>
+                      <p class="card-text text-muted">Forward.</p>
+                    </div>
+                    <button id="player-1" class="card-footer bg-primary">
+                     select
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/Jamal_Bhuyan_.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="player-2-name" class="card-title text-black">Jamal Bhuyan </h5>
+                      <p class="card-text text-muted">Midfielder</p>
+                    </div>
+                    <button id="player-2" class="card-footer bg-primary">
+                     select
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/Marcos_Acuna_Definder-.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="player-3-name" class="card-title text-black">Marcos Acuna</h5>
+                      <p class="card-text text-muted">Definder</p>
+                    </div>
+                    <button id="player-3" class="card-footer bg-primary">
+                     select
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/Neymar_forword-.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="player-4-name" class="card-title text-black">Neymar</h5>
+                      <p class="card-text text-muted">Midfielder</p>
+                    </div>
+                    <button id="player-4" class="card-footer bg-primary">
+                     select
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/Alision_Goalkippe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="player-5-name" class="card-title text-black">Alision</h5>
+                      <p class="card-text text-muted">goalkipper</p>
+                    </div>
+                    <button id="player-5" class="card-footer bg-primary">
+                     select
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/Ronaldo_midfielde.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="player-6-name" class="card-title text-black">Ronaldo_midfielde</h5>
+                      <p class="card-text text-muted">Midfielder</p>
+                    </div>
+                    <button id="player-6" class="card-footer bg-primary">
+                     select
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <aside class="text-center">
+               <div>
+                <h3>Selected-V</h3>
+                <ol id="count-player">
+                  <li>we</li>
+                  <li>me</li>
+                  <li>te</li>
+                  <li>se</li>
+                  <li></li>
+                </ol>
+              </div>
+              <div>
+                <h3>Budget</h3>
+                <p> Per Player: <input class="input rounded-start" type="text"></p>
+                <button class="btn-aside bg-primary text-white rounded">Calculate</button>
+              </div>
+              <div>
+              <h3>Player Expenses: $<span>0</span></h3>
+              <p> Manager : <input class="input rounded-start" type="text"></p>
+              <p> Coach: <input class="input rounded-start" type="text"></p>
+              <button class="btn-aside bg-primary text-white rounded">Calculate</button>
+              </div>
+              <h3>Total: $ <Span>0</Span></h3>
+              </aside>
+            </div>
+        </div>
+     </section>
+    </main>
 
 
 
     <!-- js bootstrap link  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <!-- js link  -->
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>

@@ -61,7 +61,6 @@ document.getElementById('player-6').addEventListener('click', function () {
         count++;
     }
 })
-
 document.getElementById('budget-calculate').addEventListener('click', function () {
     const budget = inputValue('budget');
     const PlayerExpensesString = document.getElementById('player-expenses')

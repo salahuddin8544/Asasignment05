@@ -1,8 +1,6 @@
 let count = 0;
 
-function disabled(disableId) {
-    const butonDiabled = document.getElementById(disableId).disabled = true;
-}
+
 document.getElementById('player-1').addEventListener('click', function () {
     if (count > 4) {
         alert('You have already selected 5 players!');
@@ -33,13 +31,6 @@ document.getElementById('player-3').addEventListener('click', function () {
         count++;
     }
 })
-function countPlayer( elementId1,elementId2){
-    const countPlayer = document.getElementById(elementId1);
-    const player = document.getElementById(elementId2).innerText;
-    const li = document.createElement('li');
-    countPlayer.appendChild(li);
-    li.innerText = player;
-}
 document.getElementById('player-4').addEventListener('click', function () {
     if (count > 4) {
         alert('You have already selected 5 players!');
@@ -70,18 +61,7 @@ document.getElementById('player-6').addEventListener('click', function () {
         count++;
     }
 })
-function inputValue(elementId) {
-    const inputField = document.getElementById(elementId);
-    const inputFieldString = inputField.value;
-    const inputFieldValue = parseInt(inputFieldString);
-    return inputFieldValue
-}
-function elementValue(elementId) {
-    const elemntField = document.getElementById(elementId);
-    const elementdString = elemntField.innerText;
-    const elementdValue = parseInt(elementdString)
-    return elementdValue
-}
+
 document.getElementById('budget-calculate').addEventListener('click', function () {
     const budget = inputValue('budget');
     const PlayerExpensesString = document.getElementById('player-expenses')

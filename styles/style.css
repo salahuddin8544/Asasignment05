@@ -28,7 +28,7 @@ button[disabled]{
   background-color: #5093f8;
   color: #cdbfbf;
 }
-.test{
+.list-item{
     height: 170px;
     width: 415px;
 }
